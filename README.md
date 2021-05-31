@@ -15,6 +15,20 @@ Rather than to invent the wheel myself, a solution was found to have the AI teac
 4) Result: a quick laptime!
 
 
+### Reward Function
+
+```python
+def reward_function(params):
+
+    if params["all_wheels_on_track"] and params["steps"] > 0:
+        reward = ((params["progress"] / params["steps"]) * 100) + (params["speed"]**2)
+    else:
+        reward = 0.01
+        
+    return float(reward)
+```
+
+
 ### Results - Kuei Raceway
 This model has been **trained for 2 hours** and provided the following results: 
 
@@ -31,19 +45,6 @@ More training will be needed.
 |1	    | 00:30.580         | 52%	                            | Off track |
 |2	    | 00:22.734	        | 30%	                            | Off track |
 |3	    | 00:30.670	        | 52%	                            | Off track |
-
-### Reward Function
-
-```python
-def reward_function(params):
-
-    if params["all_wheels_on_track"] and params["steps"] > 0:
-        reward = ((params["progress"] / params["steps"]) * 100) + (params["speed"]**2)
-    else:
-        reward = 0.01
-        
-    return float(reward)
-```
 
 
 ****
