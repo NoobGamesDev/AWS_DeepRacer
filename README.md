@@ -15,8 +15,22 @@ Rather than to invent the wheel myself, a solution was found to have the AI teac
 4) Result: a quick laptime!
 
 
-### Results
-This model is currently in training for 2 hours and updates will be posted after. 
+### Results - Kuei Raceway
+This model has been **trained for 2 hours** and provided the following results: 
+
+![image](https://user-images.githubusercontent.com/20015201/120245416-08cbee00-c265-11eb-9eb7-4f63981138e5.png)
+
+The model seems to progress the learning curve in a smooth way up. 
+Therefore I conclude that the agent learns on a steady pace, though, with only 2 hours of training it's not all conclusive. 
+More training will be needed. 
+
+#### Evaluation Results 
+
+| Trial | Time (MM:SS.mmm)  | Trial results (% track completed) | Status    |
+|-------|-------------------|-----------------------------------|-----------|
+|1	    | 00:30.580         | 52%	                            | Off track |
+|2	    | 00:22.734	        | 30%	                            | Off track |
+|3	    | 00:30.670	        | 52%	                            | Off track |
 
 ### Reward Function
 
@@ -99,24 +113,25 @@ As steering and acceleration ain't the best combination for a succesful racer, t
             current_reward *= 0.8
 ```
 
-### Results
+### Results - Kuei Raceway
 This model has been **trained for 5 hours** and provided the following results: 
   
 ![image](https://user-images.githubusercontent.com/20015201/120240864-825ddf00-c259-11eb-8d2c-494cd8fff7fa.png)
 Rewards quickly jumped to around 32k, dropped a little and stayed around the same value.. 
 Track completion stalled at 50% after a 5 hours training session.. 
 
-### AWS Virtual Race
+#### AWS Virtual Race
 
 ![image](https://user-images.githubusercontent.com/20015201/120240382-51c97580-c258-11eb-8e61-d69d64a23648.png)
 
 
 Ranking : **195**/562 
 
-Laptime : 03:38.631
+3 Laps Race : 03:38.631
 
-Nr.1 Lap : 01:06.983
+Nr.1 Race : 01:06.983
 
+#### Evaluation Results
 
 | Trial | Time (MM:SS.mmm)  | Trial results (% track completed) | Status    |
 |-------|-------------------|-----------------------------------|-----------|
