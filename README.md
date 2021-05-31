@@ -100,19 +100,22 @@ As steering and acceleration ain't the best combination for a succesful racer, t
 ```
 
 ### Results
-This model has been trained for 5 hours and provided the following results: 
-
-Rewards quickly jumped to around 32k, dropped a little and stayed around the same value.. Track completion stalled at 50% after a 5 hours training session..   
+This model has been **trained for 5 hours** and provided the following results: 
+  
 ![image](https://user-images.githubusercontent.com/20015201/120240864-825ddf00-c259-11eb-8d2c-494cd8fff7fa.png)
-
+Rewards quickly jumped to around 32k, dropped a little and stayed around the same value.. 
+Track completion stalled at 50% after a 5 hours training session.. 
 
 ### AWS Virtual Race
-Ranking : 195/562 
+
+![image](https://user-images.githubusercontent.com/20015201/120240382-51c97580-c258-11eb-8e61-d69d64a23648.png)
+
+
+Ranking : **195**/562 
 
 Laptime : 03:38.631
 
 Nr.1 Lap : 01:06.983
-
 
 
 | Trial | Time (MM:SS.mmm)  | Trial results (% track completed) | Status    |
@@ -120,7 +123,9 @@ Nr.1 Lap : 01:06.983
 |1	    | 00:34.790         | 56%	                            | Off track |
 |2	    | 00:33.540	        | 55%	                            | Off track |
 |3	    | 00:33.856	        | 54%	                            | Off track |
-![image](https://user-images.githubusercontent.com/20015201/120240382-51c97580-c258-11eb-8e61-d69d64a23648.png)
+
+
+
 
 ### Reward Function
 For the full source code, see [ML_Racer.py][1] 
