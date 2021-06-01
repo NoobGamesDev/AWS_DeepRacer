@@ -27,6 +27,22 @@ def reward_function(params):
         
     return float(reward)
 ```
+### Results - Cosmic Loop
+
+This model has been **trained for 10 hours** and provided the following results: 
+
+![image](https://user-images.githubusercontent.com/20015201/120315536-61869f80-c2d4-11eb-9b45-9e88b22ab9ee.png)
+
+
+
+#### Evaluation Results 
+
+| Trial | Time (MM:SS.mmm)  | Trial results (% track completed) | Status       |
+|-------|-------------------|-----------------------------------|--------------|
+|1	    | 01:06.001         | 100%	                            | Lap Complete |
+|2	    | 01:02.732	        | 100%	                            | Lap Complete |
+|3	    | 00:27.229	        | 40%	                            | Off track    |
+
 
 
 ### Results - Kuei Raceway
